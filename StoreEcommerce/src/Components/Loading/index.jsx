@@ -6,7 +6,7 @@ const Loading = () => {
         <div className="container">
           <div className="row justify-content-center  h-100">
             <div className='col-6 d-flex justify-content-center loadingSection  align-items-center'>
-          <img className='img-fluid loadingGif' src="../../../assets/loading1.gif"alt="" />
+          <img className='img-fluid loadingGif' src="https://github.com/omerceltikk/StoreEcommerceFrontend/tree/main/StoreEcommerce/assets/loading1.gif"alt="" />
           </div>
           </div>
         </div>
