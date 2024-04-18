@@ -42,14 +42,10 @@ const ProductDetail = () => {
           </div>
         </div>
         <div className="col-12 col-xl-4 p-0">
-          {/* <img className='img-fluid' src={`../../../assets/productsImages/productsimage5.jpg`} alt="" /> */}
-
-
-
           <div id="carouselExample" className="carousel slide">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src="../../../assets/productsImages/productsimage5.jpg" className="d-block w-100" alt="..." />
+                <img src="https://github.com/omerceltikk/StoreEcommerceFrontend/blob/main/StoreEcommerce/assets/productsImages/productsimage5.jpg?raw=true" className="d-block w-100" alt="..." />
               </div>
               {
                 product?.images?.map((item) => (

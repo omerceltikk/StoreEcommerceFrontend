@@ -34,8 +34,8 @@ const Categories = () => {
                 <div className="container-fluid p-0 m-0">
                     <div className="row p-0 m-0">
                         <div className=" position-relative p-0 m-0">
-                            <img className='img-fluid d-lg-block d-none' src="../../../assets/productsmain.jpg" alt="" />
-                            <img className='img-fluid d-lg-none d-block' src="../../../assets/productsresmain.jpg" alt="" />
+                            <img className='img-fluid d-lg-block d-none' src="https://github.com/omerceltikk/StoreEcommerceFrontend/blob/main/StoreEcommerce/assets/productsmain.jpg?raw=true" alt="" />
+                            <img className='img-fluid d-lg-none d-block' src="https://github.com/omerceltikk/StoreEcommerceFrontend/blob/main/StoreEcommerce/assets/productsresmain.jpg?raw=true" alt="" />
                             <div className='w-25 d-none d-lg-block position-absolute bottom-0 end-0 mb-lg-120 me-lg-120 mb-xl-160 me-xl-160 mb-xxl-360 me-xxl-360 text-secondary display-6'>
                                 Chic Choices, Endless Possibilities
                             </div>
@@ -51,7 +51,7 @@ const Categories = () => {
             <div className='container-fluid px-0 mx-0'>
                 <div className="row px-0 mx-0 align-items-center ">
                     <div className="col-12 col-lg-4 p-0">
-                        <img className='img-fluid' src={`../../../assets/productsImages/productsimage${Math.ceil(Math.random() * 11)}.jpg`} alt="" />
+                        <img className='img-fluid' src={`https://github.com/omerceltikk/StoreEcommerceFrontend/blob/main/StoreEcommerce/assets/productsImages/productsimage${Math.ceil(Math.random() * 11)}.jpg?raw=true`} alt="" />
                     </div>
                     <div className='col-12 mb-160 mb-lg-0 col-lg-1 mt-80 align-self-start display-3  text-secondary'>
                         design the future
@@ -63,7 +63,7 @@ const Categories = () => {
                         <div className='position-relative '>
                             <div className='designContent'>
                             </div>
-                            <img className='design-image rounded-4 ' src="../../../assets/productsImages/productsimage13.jpg" alt="" />
+                            <img className='design-image rounded-4 ' src="https://github.com/omerceltikk/StoreEcommerceFrontend/blob/main/StoreEcommerce/assets/productsImages/productsimage13.jpg?raw=true" alt="" />
                             <div className='designContent2 d-none d-sm-block'>
                             </div>
                             <div className='designContent3'>
