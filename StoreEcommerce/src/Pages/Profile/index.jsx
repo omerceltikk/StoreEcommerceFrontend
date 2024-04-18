@@ -55,7 +55,7 @@ const ProfilePage = () => {
                 <div className="col-6">
                     <div className='mb-2'>
                         <div className='mb-3 p-3 border-bottom  d-flex border-1 border-secondary' >
-                            <img src="https://github.com/omerceltikk/StoreEcommerceFrontend/tree/main/StoreEcommerce/assets/boy.png" alt="" className='img-fluid profilePageImg me-4' />
+                            <img src="https://github.com/omerceltikk/StoreEcommerceFrontend/blob/main/StoreEcommerce/assets/boy.png?raw=true" alt="" className='img-fluid profilePageImg me-4' />
                             <div className=' text-secondary fw-semibold fst-italic d-flex align-items-center fs-5'>
                                 {currUser?.userName}
                             </div>
