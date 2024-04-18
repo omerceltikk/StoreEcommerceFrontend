@@ -1,0 +1,37 @@
+:root{
+    --general-secondary-color:#7c7c7c;
+    --general-menu-color: rgba(255, 255, 255, 0.3);
+
+}
+
+$secondary: #7c7c7c;
+$spacer: 1rem;
+$warning:#7c7c7c;
+$danger: #6b0000;
+
+$font-family-base:"Barlow Condensed", sans-serif;
+
+$carousel-control-color:#7c7c7c ;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  175: $spacer * 1.75,
+  075: $spacer * 0.75,
+  6: $spacer * 3.75,
+  120:120px,
+  100:100px,
+  80: 5rem,
+  160: 10rem,
+  240:15rem,
+  360:20rem,
+  180: 11.25rem,
+  34:2.125rem,
+  36:2.25rem,
+  20: 1.25rem
+);
+

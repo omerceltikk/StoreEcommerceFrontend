@@ -1,0 +1,391 @@
+:root {
+    --general-secondary-color: #7c7c7c;
+    --general-darksec-color: #5c5c5c;
+    --general-menu-color: rgba(255, 255, 255);
+    --delete-hover-color: #3b0000;
+    --card-general-bg-color:#E5DDC5;
+    --shadow-general-bg-color:#4b3800;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.customCloseNavbar {
+    width: 40%;
+}
+
+.customTransition {
+    transition: all 1s ease-in-out;
+}
+
+.sizeBtn {
+    width: 50px;
+    text-align: center;
+
+}
+
+@mixin imgContent($url, $p) {
+    background-image: $url ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: $p;
+}
+
+.profilePageImg {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.h-100vh{
+    height: 100vh;
+}
+.img-max{
+    max-height: 600px;
+}
+.word-wrap {
+    word-wrap: break-word;
+}
+
+.mainPageSection {
+    @include imgContent(url("../assets/authmain6.jpg"), top)
+}
+
+.mainBg1 {
+    @include imgContent(url("../assets/mainresponsive1.jpg"), bottom)
+}
+
+.mainBg2 {
+    @include imgContent(url("../assets/mainresponsive2.jpg"), bottom)
+}
+
+.mainBg3 {
+    @include imgContent(url("../assets/mainresponsive3.jpg"), bottom)
+}
+
+.mainBg4 {
+    @include imgContent(url("../assets/mainresponsive4.jpg"), bottom)
+}
+
+.loadingSection {
+    height: 100vh;
+    background-color: #000;
+}
+.footerBgContainer{
+    background-color: #000;
+}
+.loadingGif {
+    width: 250px;
+}
+
+.customDropdown {
+    background-color: var(--general-menu-color);
+}
+
+.customTextArea {
+    min-height: 200px !important;
+    width: 100%;
+    outline: none;
+}
+
+.customInput {
+    outline: none;
+    border: 1px solid var(--general-darksec-color);
+    background-color: var(--general-menu-color);
+}
+
+.customNavbarStyle {
+    border: 1px solid;
+    border-color: var(--general-secondary-color);
+    z-index: 100;
+    outline: none;
+    box-shadow: 0px 0px 15px 3px rgba(255, 255, 255, 0.2);
+
+}
+
+.iconPosition {
+    top: 0;
+    right: 0;
+}
+
+.customCardText {
+    font-size: 12px !important;
+}
+
+.basketCardText {
+    font-size: 14px !important;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.height-100 {
+    height: 100vh;
+}
+
+.customLink {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbarIndex {
+    z-index: 1000;
+}
+
+.customCard {
+    list-style: none;
+    text-decoration: none;
+}
+
+.customTextStyle {
+    position: absolute;
+    right: -25%;
+    bottom: -15%;
+    font-weight: bolder;
+    width: 150px;
+}
+
+.design-image {
+    max-width: 270px;
+    z-index: 10;
+}
+
+.basketDropdown {
+    width: 320px;
+}
+
+.hoverDarkEffect {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.hoverDarkEffect:hover {
+    color: var(--delete-hover-color) !important;
+}
+
+.customCardPng {
+    background: var(--card-general-bg-color);
+    height: 350px;
+    box-shadow: inset -6px 2px 41px -7px rgba(0, 0, 0, 0.4);
+
+}
+
+.imgContent {
+    max-height: 100%;
+}
+
+.textAnimation {
+    animation:  glow 4000ms linear infinite 2000ms;
+}
+.customProductImageCard{
+    height: 100px;
+}
+
+@keyframes glow {
+    40% {
+        text-shadow: -6px 3px 3px var(--shadow-general-bg-color);
+    }
+}
+@mixin boxContent($w, $h, $t, $br, $bg, $z, $b) {
+    width: $w;
+    height: $h;
+    transform: $t;
+    flex-shrink: 0;
+    content: "";
+    border-radius: $br;
+    background: $bg;
+    z-index: $z;
+    border: $b;
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.designContent::before {
+    @include boxContent(250px, 370px, rotate(0), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+    bottom: -10%;
+    left: -20%;
+}
+
+.designContent2::before {
+    @include boxContent(350px, 200px, rotate(-8deg), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+    top: -7%;
+    right: -20%;
+}
+
+.designContent3::before {
+    @include boxContent(350px, 500px, rotate(0), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+    top: -15%;
+    left: -10%;
+}
+
+.basketIcon::before {
+    @include boxContent(15px, 15px, rotate(0), 50%, rgb(56, 56, 56), 1, 0);
+    bottom: 2px;
+    left: 3px;
+}
+
+.basketCount {
+    bottom: 2px;
+    left: 7px;
+    font-size: 12px;
+    z-index: 100;
+}
+
+@mixin animationframe($d) {
+    animation-name: brightAnimation;
+    animation-duration: 1500ms;
+    color: var(--general-secondary-color);
+    transition: all 1s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: $d ;
+}
+
+
+.chevronAnimation {
+    @include animationframe(0s);
+}
+
+.chevronAnimation2 {
+    @include animationframe(500ms);
+}
+
+.chevronAnimation3 {
+    @include animationframe(1s);
+}
+
+@keyframes brightAnimation {
+    0% {
+        color: var(--general-darksec-color);
+    }
+
+    100% {
+        color: var(--general-secondary-color);
+        text-shadow: -1px 0px 24px var(--general-secondary-color);
+    }
+}
+
+
+@media screen and (min-width:576px) {
+    .customCloseNavbar {
+        width: 33%;
+    }
+
+    .design-image {
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .customCloseNavbar {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .mainBg1 {
+        @include imgContent(url("../assets/main3.jpg"), bottom)
+    }
+
+    .mainBg2 {
+        @include imgContent(url("../assets/main5.jpg"), top)
+    }
+
+    .mainBg3 {
+        @include imgContent(url("../assets/mainresponsive3.jpg"), bottom);
+
+    }
+
+    .mainBg4 {
+        @include imgContent(url("../assets/mainresponsive4.jpg"), bottom)
+    }
+
+    .customCloseNavbar {
+        width: 33%;
+    }
+
+    .design-image {
+        max-width: 270px;
+        z-index: 10;
+    }
+
+    .designContent::before {
+        @include boxContent(150px, 270px, rotate(0), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+        bottom: -10%;
+        left: -20%;
+    }
+
+    .designContent2::before {
+        @include boxContent(250px, 120px, rotate(-8deg), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+        top: -7%;
+        right: -20%;
+    }
+
+    .designContent3::before {
+        @include boxContent(250px, 360px, rotate(0), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+        top: -12%;
+        left: -10%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .customCloseNavbar {
+        width: 33%;
+    }
+
+    .design-image {
+        max-width: 320px;
+    }
+
+    .designContent::before {
+        @include boxContent(200px, 320px, rotate(0), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+        bottom: -10%;
+        left: -20%;
+    }
+
+    .designContent2::before {
+        @include boxContent(300px, 150px, rotate(-8deg), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+        top: -7%;
+        right: -20%;
+    }
+
+    .designContent3::before {
+        @include boxContent(300px, 450px, rotate(0), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+        top: -15%;
+        left: -10%;
+    }
+}
+
+@media screen and (min-width:1480px) {
+    .customCloseNavbar {
+        width: 25%;
+    }
+
+    .design-image {
+        max-width: 400px;
+        z-index: 10;
+    }
+
+    .designContent::before {
+        @include boxContent(250px, 370px, rotate(0), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+        bottom: -10%;
+        left: -20%;
+    }
+
+    .designContent2::before {
+        @include boxContent(350px, 200px, rotate(-8deg), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+        top: -7%;
+        right: -20%;
+    }
+
+    .designContent3::before {
+        @include boxContent(350px, 500px, rotate(0), 10px, rgb(252, 238, 213, 0.0), -1, 1px solid var(--general-darksec-color));
+        top: -15%;
+        left: -10%;
+    }
+}
