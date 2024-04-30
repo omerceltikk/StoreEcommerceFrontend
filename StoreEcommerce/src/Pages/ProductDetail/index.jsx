@@ -21,7 +21,7 @@ const ProductDetail = () => {
       const filteredData = data.products.find((item) => productId == item.productId);
       setProduct(filteredData);
     }
-  }, [dispatch, data])
+  }, [dispatch, data,productId])
 
   if (status == "loading") {
     return (

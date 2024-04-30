@@ -3,8 +3,8 @@
     --general-darksec-color: #5c5c5c;
     --general-menu-color: rgba(255, 255, 255);
     --delete-hover-color: #3b0000;
-    --card-general-bg-color:#E5DDC5;
-    --shadow-general-bg-color:#4b3800;
+    --card-general-bg-color: #E5DDC5;
+    --shadow-general-bg-color: #4b3800;
 }
 
 body {
@@ -20,6 +20,17 @@ body {
 
 .customTransition {
     transition: all 1s ease-in-out;
+}
+
+.navbarCard {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.navbarArea{
+    transition: all 0.5s ease-in-out;
+}
+.navbarCard:hover {
+    background-color: #eee;
 }
 
 .sizeBtn {
@@ -41,12 +52,15 @@ body {
     height: 70px;
     border-radius: 50%;
 }
-.h-100vh{
+
+.h-100vh {
     height: 100vh;
 }
-.img-max{
+
+.img-max {
     max-height: 600px;
 }
+
 .word-wrap {
     word-wrap: break-word;
 }
@@ -75,9 +89,11 @@ body {
     height: 100vh;
     background-color: #000;
 }
-.footerBgContainer{
+
+.footerBgContainer {
     background-color: #000;
 }
+
 .loadingGif {
     width: 250px;
 }
@@ -180,9 +196,10 @@ body {
 }
 
 .textAnimation {
-    animation:  glow 4000ms linear infinite 2000ms;
+    animation: glow 4000ms linear infinite 2000ms;
 }
-.customProductImageCard{
+
+.customProductImageCard {
     height: 100px;
 }
 
@@ -191,6 +208,7 @@ body {
         text-shadow: -6px 3px 3px var(--shadow-general-bg-color);
     }
 }
+
 @mixin boxContent($w, $h, $t, $br, $bg, $z, $b) {
     width: $w;
     height: $h;

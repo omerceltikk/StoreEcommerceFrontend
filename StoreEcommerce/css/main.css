@@ -29125,8 +29125,8 @@ textarea.form-control-lg {
   --general-darksec-color: #5c5c5c;
   --general-menu-color: rgba(255, 255, 255);
   --delete-hover-color: #3b0000;
-  --card-general-bg-color:#E5DDC5;
-  --shadow-general-bg-color:#4b3800;
+  --card-general-bg-color: #E5DDC5;
+  --shadow-general-bg-color: #4b3800;
 }
 
 body {
@@ -29142,6 +29142,19 @@ body {
 
 .customTransition {
   transition: all 1s ease-in-out;
+}
+
+.navbarCard {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbarArea {
+  transition: all 0.5s ease-in-out;
+}
+
+.navbarCard:hover {
+  background-color: #eee;
 }
 
 .sizeBtn {
