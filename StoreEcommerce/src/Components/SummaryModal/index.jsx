@@ -18,11 +18,11 @@ const SummaryModal = () => {
              centered
              variant="secondary"
             >
-                <Modal.Header className='bg-dark text-light' closeButton>
+                <Modal.Header className='bg-dark text-light' >
                     <Modal.Title>Notice</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className='bg-dark text-light pb-4'>This is a test Website for development purposes. Delays and slowness is caused by Hosting servers and not related to software development. It has no commercial purpose. </Modal.Body>
-                <Modal.Body className='bg-dark text-light border-1 border-bottom' closeButton>
+                <Modal.Body className='bg-dark text-light border-1 border-bottom' >
                     <Modal.Title>Bilgi</Modal.Title>
                 </Modal.Body>
                 <Modal.Body className='bg-dark text-light pb-4'>Bu site yalnızca development aşaması adına test amaçlı tasarlanmıştır.Gecikme ve yavaşlıklar Hosting serverlarından kaynaklanmaktadır. Hiçbir ticari niteliği yoktur.</Modal.Body>
