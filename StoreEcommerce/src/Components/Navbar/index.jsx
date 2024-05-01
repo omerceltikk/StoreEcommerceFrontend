@@ -174,7 +174,7 @@ const Navbar = () => {
                                                                     <div className={`row`}>
                                                                         {
                                                                             data2.categories.filter((item) => item.categoryGender == category).map((filteredItem) => (
-                                                                                <div key={filteredItem.id}><Link to={`/categories/${filteredItem.id}`} className="customLink text-secondary mt-2 mx-4" aria-label="Close" href="#">{filteredItem.category}</Link></div>
+                                                                                <div data-bs-dismiss="offcanvas" aria-label="Close" key={filteredItem.id}><Link to={`/categories/${filteredItem.id}`} className="customLink text-secondary mt-2 mx-4"  href="#">{filteredItem.category}</Link></div>
                                                                             ))
                                                                         }
                                                                     </div>
