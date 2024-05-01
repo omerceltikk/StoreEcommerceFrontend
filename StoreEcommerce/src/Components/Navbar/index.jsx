@@ -136,14 +136,14 @@ const Navbar = () => {
                         </div>
                         <div className="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                             <div className="offcanvas-header">
-                                <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                                <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">Store E-Commerce</h5>
                                 <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div className="offcanvas-body">
                                 <div className='row flex-column'>
-                                    <div className=''>
+                                    <div  className=''>
                                         <Link to={"/authentication"} className={`link-underline link-underline-opacity-0 ${currUser ? "d-none" : "d-block"}`}>
-                                            <div className='text-secondary fst-italic'>
+                                            <div data-bs-dismiss="offcanvas" aria-label="Close" className='text-secondary fst-italic'>
                                                 Login / Register
                                             </div>
                                         </Link>
@@ -153,7 +153,7 @@ const Navbar = () => {
                                             {currUser?.userName}
                                         </a>
                                         <div className="dropdown-menu  customDropdown mt-3">
-                                            <Link className='' to={`profile/${currUser?.userId}`}><button className="dropdown-item" type="button">Profile</button></Link>
+                                            <Link className='' to={`profile/${currUser?.userId}`}><button data-bs-dismiss="offcanvas" aria-label="Close" className="dropdown-item" type="button">Profile</button></Link>
                                             <li><button className="dropdown-item" type="button">Settings</button></li>
                                             <li><button onClick={() => HandleLogOutClick()} className="dropdown-item" type="button">LogOut</button></li>
                                         </div>
