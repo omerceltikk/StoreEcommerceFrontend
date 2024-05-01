@@ -56,7 +56,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-6 col-lg-4">
+                    <div className="col-12 col-lg-4">
                         <div className='fs-6 fw-bold text-secondary py-2 text-decoration-underline'>
                             Contact Us
                         </div>
@@ -87,7 +87,7 @@ const Footer = () => {
                             <div className={`my-1 btn py-2 p-3 border border-secondary rounded-2 basketCardText align-self-end ${currLocation == "/" ? "btn-light border-0" : "border-1"}`}>Send</div>
                         </div>
                     </div>
-                    <div className="col-6 col-lg-4">
+                    <div className="col-12 col-lg-4">
                         <div className='fs-6 fw-bold text-secondary py-2 text-decoration-underline text-end'>
                             Socials
                         </div>

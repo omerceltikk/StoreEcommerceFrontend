@@ -42,7 +42,7 @@ const Navbar = () => {
         }
     }, [dispacth, userData.users])
 
- 
+
     if (data == "fulfilled") {
 
         return (
@@ -83,7 +83,7 @@ const Navbar = () => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <NavbarInput expand={expand}/>
+                                    <NavbarInput expand={expand} />
                                     <div className='d-flex align-items-center'>
                                         <div className={`${expand ? "d-flex" : "d-none"}`} >
                                             <div className={`align-items-center ${currUser ? "d-none" : "d-flex"}`}>
@@ -150,7 +150,7 @@ const Navbar = () => {
                                     </div>
                                     <div className={`dropdown mx-2 ${currUser ? "d-block" : "d-none"}`}>
                                         <a className="nav-link dropdown-toggle text-secondary customTransition" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            usernama
+                                            {currUser?.userName}
                                         </a>
                                         <div className="dropdown-menu  customDropdown mt-3">
                                             <Link className='' to={`profile/${currUser?.userId}`}><button className="dropdown-item" type="button">Profile</button></Link>

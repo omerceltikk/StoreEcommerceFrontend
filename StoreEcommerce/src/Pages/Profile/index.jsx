@@ -52,7 +52,7 @@ const ProfilePage = () => {
     return (
         <div className='container pt-120'>
             <div className="row ">
-                <div className="col-6">
+                <div className="col-12 col-lg-6">
                     <div className='mb-2'>
                         <div className='mb-3 p-3 border-bottom  d-flex border-1 border-secondary' >
                             <img src="https://github.com/omerceltikk/StoreEcommerceFrontend/blob/main/StoreEcommerce/assets/boy.png?raw=true" alt="" className='img-fluid profilePageImg me-4' />
@@ -69,7 +69,7 @@ const ProfilePage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-6 ">
+                <div className="col-12 col-lg-6">
                     <div className=" border border-1 rounded-3 border-secondary p-4">
                         <div className='fs-5 fw-bold text-secondary accordion' id="accordionExample" >
                             <h5 className="card-title text-center mb-4 fw-bold text-secondary">Orders</h5>
